@@ -1,0 +1,43 @@
+
+[
+    {
+        "_id": 1,
+        "firstname": "Marton",
+        "lastname": "Bagoly",
+        "datePlaced": "2018-11-13",
+        "dateShipped": "2018-11-14",
+        "paymentType": "credit card",
+        "amountDue": 41.4,
+        "paid": true
+    },
+    {
+        "_id": 2,
+        "firstname": "Akhila",
+        "lastname": "Gandra",
+        "datePlaced": "2018-11-13",
+        "dateShipped": "2018-11-14",
+        "paymentType": "cash",
+        "amountDue": 19.0,
+        "paid": true  
+    },
+    {
+        "_id": 3,
+        "firstname": "Havya",
+        "lastname": "Ravipati",
+        "datePlaced": "2018-11-13",
+        "dateShipped": "2018-11-14",
+        "paymentType": "cash",
+        "amountDue": 25.72,
+        "paid": false  
+    },
+    {
+        "_id": 4,
+        "firstname": "Sai",
+        "lastname": "Anugu",
+        "datePlaced": "2018-11-13",
+        "dateShipped": "2018-11-14",
+        "paymentType": "check",
+        "amountDue": 10.09,
+        "paid": true  
+    }
+]

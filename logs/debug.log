@@ -1,0 +1,29 @@
+2018-12-03T20:36:08.802Z - info: Environment variables loaded.
+2018-12-03T20:36:08.833Z - debug: START routing
+2018-12-03T20:36:08.895Z - debug: END routing
+2018-12-03T20:36:08.896Z - info: Loaded routing.
+2018-12-03T20:36:08.953Z - info: START seeder.
+2018-12-03T20:36:08.959Z - debug: 4 customers seeded
+2018-12-03T20:36:08.961Z - debug: 5 products seeded
+2018-12-03T20:36:08.964Z - debug: 4 order seeded
+2018-12-03T20:36:08.967Z - debug: 5 orderLineItems seeded
+2018-12-03T20:36:08.967Z - info: END Seeder. Sample data read and verified.
+2018-12-03T20:36:20.827Z - debug: GET /
+2018-12-03T20:36:20.843Z - debug: Request to /
+2018-12-03T20:36:24.196Z - debug: GET /orderLine/create
+2018-12-03T20:36:24.198Z - info: Handling GET /create[object Object]
+2018-12-03T20:36:24.204Z - debug: {"quantity":1}
+2018-12-03T20:37:37.920Z - debug: GET /
+2018-12-03T20:37:37.921Z - debug: Request to /
+2018-12-03T20:38:26.519Z - debug: GET /
+2018-12-03T20:38:26.520Z - debug: Request to /
+2018-12-03T20:38:37.149Z - debug: GET /orderLine
+2018-12-03T20:38:40.976Z - debug: GET /orderLine/edit/2
+2018-12-03T20:38:40.981Z - info: Handling GET /edit/:id [object Object]
+2018-12-03T20:38:40.985Z - info: RETURNING VIEW FOR{"_id":2,"orderID":54532,"lineNumber":2,"productKey":"Bread","quantity":3}
+2018-12-03T20:38:45.505Z - debug: GET /orderLine/details/3
+2018-12-03T20:38:45.507Z - info: Handling GET /details/:id [object Object]
+2018-12-03T20:38:45.507Z - info: RETURNING VIEW FOR {"_id":3,"orderID":54532,"lineNumber":2,"productKey":"Dress","quantity":1}
+2018-12-03T20:38:48.543Z - debug: GET /orderLine/findone/3
+2018-12-03T20:38:51.342Z - debug: GET /orderLine/findone/3
+2018-12-03T20:38:54.352Z - debug: GET /orderLine/findall

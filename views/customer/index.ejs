@@ -1,0 +1,45 @@
+
+
+<h1>Customers</h1>
+<br/>
+<br/>
+<div class="container-fluid">
+  <div class=row>
+    <div class="col col-md-12">
+      <a href="Customer/create" class="btn btn-primary new">
+        Create a new customer
+      </a>
+      <h2>Recent customer entries</h2>
+      <p>There are
+        <%= customers.query.length %> customers.
+          <br/>
+      </p>
+      <% for (var i = customers.query.length-1; i >= 0; i--) {   
+        Customer = customers.query[i];   %>
+        <div class="panel panel-default">
+          <div class="panel-heading"></div>
+          <div class="text-muted pull-right"></div>
+          <div class="panel-body">
+            ID:
+            <%=  Customer._id %>
+            <br> firstName:
+            <%=Customer.firstname%>
+            <br /> lastName:
+            <%=Customer.lastname%>
+            <br /> Age (years):
+            <%=Customer.age%>
+            <br /> phonenumber:
+            <%=Customer.phonenumber%>
+            <br /> address:
+            <%=Customer.address%>
+                    <br/>
+                    <br/>
+                          <a href="/Customer/delete/<%= Customer._id  %>" class="btn btn-danger"> Delete </a>
+                          <a href="/Customer/details/<%= Customer._id %>" class="btn btn-info"> Details </a>
+                          <a href="/Customer/edit/<%= Customer._id %>" class="btn btn-warning"> Edit </a>
+          </div>
+        </div>
+        <% } %>
+    </div>
+  </div>
+</div>

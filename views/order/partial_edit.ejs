@@ -1,0 +1,40 @@
+
+
+<!-- main  -->
+<div class=row>
+  <div class="col col-xs-12">
+    <div class="form-group">
+      <label for="firstname">First Name</label>
+      <input type="text" class="form-control" id="firstname" name="firstname" value="<%= order.firstname %>" required>
+    </div>
+    <div class="form-group">
+      <label for="lastname">Last Name</label>
+      <input type="text" class="form-control" id="lastname" name="lastname" value="<%= order.lastname %>" required>
+    </div>
+    <div class="form-group">
+      <label for="datePlaced">Date Placed</label>
+      <input type="date" class="form-control" id="datePlaced" name="datePlaced" value="<%= order.datePlaced %>"
+        required>
+    </div>
+    <div class="form-group">
+      <label for="dateShipped">Date Shipped</label>
+      <input type="date" class="form-control" id="dateShipped" name="dateShipped" value="<%= order.dateShipped %>">
+    </div>
+    <div class="form-group">
+      <label for="paymentType">Payment Type</label>
+      <select type="text" class="form-control" id="paymentType" name="paymentType" value="<%= order.paymentType %>">
+        <option value="Credit Card">Credit Card</option>
+        <option value="Check">Check</option>
+        <option value="Cash">Cash</option>
+      </select>
+        
+    </div>
+    <div class="form-group">
+      <label for="paid">Paid</label>
+      <select type="text" class="form-control" id="paid" name="paid" value="<%= order.paid %>" required>
+          <option value="true">True (Paid)</option>
+          <option value="false">False (Not Paid)</option>
+      </select>
+    </div>
+  </div>
+</div>

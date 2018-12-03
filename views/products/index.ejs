@@ -1,0 +1,49 @@
+<!--Author: Vamsee Krishna Gangapatnam-->
+
+<h1>Products</h1>
+<br/>
+<br/>
+<div class="container-fluid">
+  <div class=row>
+    <div class="col col-md-12">
+      <a href="products/create" class="btn btn-primary new">
+        Create a new product
+      </a>
+      <h2>Recent product entries</h2>
+      <p>There are
+        <%= products.query.length %> products.
+          <br/>
+      </p>
+      <% for (var i = products.query.length-1; i >= 0; i--) {   
+        product = products.query[i];   %>
+        <div class="panel panel-default">
+          <div class="panel-heading"></div>
+          <div class="text-muted pull-right"></div>
+          <div class="panel-body">
+            ID:
+            <%=  product._productid %>
+              <br> Product Name:
+              <%=product.productName%>
+                <br/> Product Description:
+                <%=product.productDescription%>
+                  <br/> price :
+                  <%=product.price%>
+                  <br/> product Category :
+                  <%=product.productCategory%>
+                  <br/> Seller Id :
+                  <%=product.sellerId%>
+                          <br/>
+                          <br/>
+                          <a href="/products/delete/<%= product._productid  %>" class="btn btn-danger"> Delete </a>
+                          <a href="/products/details/<%= product._productid %>" class="btn btn-info"> Details </a>
+                          <a href="/products/edit/<%= product._productid %>" class="btn btn-warning"> Edit </a>
+                          <br/> 
+                          <br/>
+                          <br/> 
+          </div>
+        </div>
+        <% } %>
+
+    </div>
+  </div>
+</div>

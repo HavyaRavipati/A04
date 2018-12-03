@@ -1,0 +1,25 @@
+
+<h2>Confirm deletion of customer</h2>
+ID:
+<%=  Customer._id %>
+<br> firstName:
+<%=Customer.firstname%>
+<br /> lastName:
+<%=Customer.lastname%>
+<br /> Age (years):
+<%=Customer.age%>
+<br /> phoneNumber:
+<%=Customer.phonenumber%>
+<br /> address:
+<%=Customer.address%>
+<br />
+<br />
+
+<form method="get" action="/Customer">
+    <input type="submit" value="Return to list" class="btn btn-caution" />
+</form>
+
+<br />
+<form method="POST" action="/Customer/delete/<%= Customer._id %>">
+    <input type="submit" value="Delete this item" class="btn btn-danger pull-right" />
+</form>

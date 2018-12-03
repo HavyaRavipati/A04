@@ -1,0 +1,45 @@
+
+
+<h1>Order Line</h1>
+<br />
+<br />
+<div class="container-fluid">
+  <div class=row>
+    <div class="col col-md-12">
+      <a href="orderLine/create" class="btn btn-primary new">
+        Create a new order-line item
+      </a>
+      <h2>Recent order entries</h2>
+      <p>There are
+        <%= orderLineItems.query.length %> orders-line items.
+        <br />
+      </p>
+      <% for (var i = orderLineItems.query.length-1; i >= 0; i--) {   
+        orderLineItem = orderLineItems.query[i];   %>
+      <div class="panel panel-default">
+        <div class="panel-heading"></div>
+        <div class="text-muted pull-right"></div>
+        <div class="panel-body">
+          Order ID:
+          <%=  orderLineItem._id %>
+          <br> Order ID
+          <%=orderLineItem.orderID%>
+          <br /> Line Number
+          <%=orderLineItem.lineNumber%>
+          <br /> Product Key
+          <%=orderLineItem.productKey%>
+          <br /> Quantity
+          <%=orderLineItem.quantity%>
+          <br />
+          <br />
+
+          <a href="/orderLine/delete/<%= orderLineItem._id  %>" class="btn btn-danger"> Delete </a>
+          <a href="/orderLine/details/<%= orderLineItem._id %>" class="btn btn-info"> Details </a>
+          <a href="/orderLine/edit/<%= orderLineItem._id %>" class="btn btn-warning"> Edit </a>
+        </div>
+      </div>
+      <%  } %>
+
+    </div>
+  </div>
+</div>

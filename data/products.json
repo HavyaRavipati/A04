@@ -1,0 +1,45 @@
+
+[
+      {
+    "_productid": 1,
+    "productName": "pendrive",
+    "productDescription": "place to store memory or data",
+    "price": 90,
+    "productCategory": "Accessories",
+    "sellerId":1
+  },
+  {
+      "_productid": 2,
+      "productName": "Bread",
+      "productDescription": "Eat",
+      "price": 1,
+      "productCategory": "Food",
+      "sellerId":2
+    },
+    {
+      "_productid": 3,
+      "productName": "Dress",
+      "productDescription": "To wear",
+      "price": 10,
+      "productCategory": "Clothes",
+      "sellerId":3
+    },
+    {
+      "_productid": 4,
+      "productName": "matress",
+      "productDescription": "To sleep",
+      "price": 15,
+      "productCategory": "Bedding",
+      "sellerId":4
+    },
+    {
+      "_productid": 5,
+      "productName": "LED bulbs",
+      "productDescription": "to emlight",
+      "price": 18,
+      "productCategory": "Accessories",
+      "sellerId":5
+    }
+    
+]
+    

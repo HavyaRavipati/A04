@@ -1,0 +1,10 @@
+
+image: node:8.12.0
+
+pipelines:
+  default:
+    - step:
+        
+        script:
+        - git push https://heroku:c9f9389a-6536-45f7-ae41-290cc6a474ee@git.heroku.com/mvcvamshee.git HEAD 
+         

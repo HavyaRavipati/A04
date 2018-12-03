@@ -1,0 +1,27 @@
+
+<br/>
+<br/>
+<div class="container-fluid">
+  <div class=row>
+    <div class="col col-md-12">
+      <h2>Edit customer </h2>
+      <div class="content">
+        <form method="POST" action="/Customer/save/<%= Customer._id %>">
+          <div class="form-group" id=frm>
+            <label for="_id">ID</label>
+            <input type="number" class="form-control" id="_id" name="_id" value="<%= Customer._id %>" required>
+          </div>
+
+            <!-- COMMON TO EDIT AND CREATE -->
+            <%include partial_edit.ejs %>
+              <input type="submit" value="Save" class="btn btn-primary" />
+        </form>
+        <br/>
+
+        <form method="get" action="/Customer">
+          <input type="submit" value="Return to list" class="btn btn-caution" />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

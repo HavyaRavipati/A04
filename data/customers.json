@@ -1,0 +1,35 @@
+
+[
+    {
+      "_id": 1,
+      "firstname": "Marton",
+      "lastname": "Bagoly",
+      "age": 20,
+      "phonenumber": 1596578915,
+      "address" : "221 N Mattie"
+    },
+    {
+        "_id": 2,
+        "firstname": "Akhila",
+        "lastname": "Gandra",
+        "age": 20,
+        "phonenumber": 5861593521,
+        "address" : "221 N Mattie"
+      },
+      {
+        "_id": 3,
+        "firstname": "Havya",
+        "lastname": "Ravipati",
+        "age": 20,
+        "phonenumber": 1986543211,
+        "address" : "221 N Mattie"
+      },
+      {
+        "_id": 4,
+        "firstname": "Sai",
+        "lastname": "Anugu",
+        "age": 20,
+        "phonenumber": 5161981189,
+        "address" : "221 N Mattie"
+      }
+  ]

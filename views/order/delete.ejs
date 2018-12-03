@@ -1,0 +1,30 @@
+
+<br />
+<br />
+<h2>Confirm deletion of order</h2>
+<br />
+<br /> Order ID:
+<%=  order._id %>
+<br> First Name:
+<%=order.firstname%>
+<br /> Last Name:
+<%=order.lastname%>
+<br /> Date Placed:
+<%=order.datePlaced%>
+<br /> Date Shipped:
+<%=order.dateShipped%>
+<br /> Payment Type:
+<%=order.paymentType%>
+<br /> Paid:
+<%=order.paid%>
+<br />
+<br />
+
+<form method="get" action="/order">
+  <input type="submit" value="Return to list" class="btn btn-caution" />
+</form>
+
+<br />
+<form method="POST" action="/order/delete/<%= order._id %>">
+  <input type="submit" value="Delete this item" class="btn btn-danger pull-right" />
+</form>
